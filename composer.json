@@ -1,0 +1,39 @@
+{
+  "name": "proklung/controller-sanitizer-validator",
+  "description": "Валидация и санация запроса посредством трэйтов для Symfony-ориентированных приложений",
+  "type": "library",
+  "keywords": [
+    "php",
+    "validation",
+    "sanitizer"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Gavrilov Fedy",
+      "email": "fedor.gavrilov.75@mail.ru",
+      "homepage": "https://github.com/ProklUng"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/ProklUng/controller.sanitizer.validator/issues",
+    "source": "https://github.com/ProklUng/controller.sanitizer.validator"
+  },
+  "autoload": {
+    "psr-4": {
+      "Prokl\\RequestValidatorSanitizer\\": "src"
+    }
+  },
+  "require": {
+    "php": ">=7.3",
+    "symfony/http-foundation": "^4.4",
+    "illuminate/validation": "~6 | ~7",
+    "illuminate/translation": "~6 | ~7",
+    "waavi/sanitizer": "^1.0",
+    "egulias/email-validator": "^2.1",
+    "giggsey/libphonenumber-for-php": "^8.12"
+  },
+  "require-dev": {
+    "proklung/phpunit-testing-tools": "^1.0"
+  }
+}
