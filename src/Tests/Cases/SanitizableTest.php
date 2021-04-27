@@ -1,6 +1,6 @@
 <?php
 
-namespace Cases;
+namespace Prokl\RequestValidatorSanitizer\Tests\Cases;
 
 use Prokl\RequestValidatorSanitizer\Sanitizing\SanitizableTrait;
 use Prokl\TestingTools\Base\BaseTestCase;
@@ -8,10 +8,15 @@ use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Class SanitizableTest
- * @package Cases
+ * @package Prokl\RequestValidatorSanitizer\Tests\Cases
+ *
+ * @since 27.04.2021
  */
 class SanitizableTest extends BaseTestCase
 {
+    /**
+     * @inheritDoc
+     */
     protected function setUp(): void
     {
         parent::setUp();
