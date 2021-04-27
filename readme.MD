@@ -2,7 +2,7 @@
 
 ## Установка
 
-`composer require roklung/controller-sanitizer-validator`
+`composer require proklung/controller-sanitizer-validator`
 
 ## Санитайзер
 
