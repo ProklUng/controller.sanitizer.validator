@@ -88,7 +88,8 @@ class SimpleController extends AbstractController
 
 - `CustomEmailValidator` - Email, при помощи [https://github.com/egulias/EmailValidator]()
 - `CustomEmailValidatorNullable` - Email, может быть пустым
-- `CyrillicAlphaValidator` - в параметре только кириллические символы
+- `CyrillicAlphaValidator` - в параметре только символы и пробелы
 - `CyrillicAlphaValidatorNullable` - в параметре только кириллические символы, может быть пустым
 - `LaravelPhoneValidator` - телефонный номер, при помощи [https://github.com/giggsey/libphonenumber-for-php]() 
 - `LaravelPhoneValidatorNullable` - телефонный номер, может быть пустым
+- `JsonValidator` - проверка на json
