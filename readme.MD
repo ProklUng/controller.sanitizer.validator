@@ -4,6 +4,10 @@
 
 `composer require proklung/controller-sanitizer-validator`
 
+## Нюансы
+
+Валидируются и очищаются только GET и POST параметры запроса.
+
 ## Санитайзер
 
 С помощью [https://github.com/Waavi/Sanitizer](). В контроллере должно быть реализован метод `getSanitizingRules`,
