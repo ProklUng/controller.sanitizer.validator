@@ -10,8 +10,8 @@
 
 ## Санитайзер
 
-С помощью [https://github.com/Waavi/Sanitizer](). В контроллере должно быть реализован метод `getSanitizingRules`,
-описывающий правила санации.
+С помощью [https://github.com/Waavi/Sanitizer](). В контроллере может быть реализован метод `getSanitizingRules`,
+описывающий правила санации. Или определено свойство типа массив `sanitizingRules`.
 
 ```php
 use Prokl\RequestValidatorSanitizer\Sanitizing\SanitizableTrait;
@@ -49,8 +49,8 @@ class SimpleController extends AbstractController
 
 ## Валидатор
 
-С помощью [https://github.com/illuminate/validation](). В контроллере должно быть реализован метод `getRules`,
-описывающий правила валидации в стадарте `Illuminate Validation`.
+С помощью [https://github.com/illuminate/validation](). В контроллере может быть реализован метод `getRules`,
+описывающий правила валидации в стадарте `Illuminate Validation`. Или определено свойство типа массив `rules`.
 
 ```php
 use Prokl\RequestValidatorSanitizer\Validation\Custom\CustomEmailValidatorNullable;
