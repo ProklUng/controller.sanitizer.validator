@@ -2,7 +2,9 @@
 
 namespace Prokl\RequestValidatorSanitizer\Validation\Exceptions;
 
-use Prokl\RequestValidatorSanitizer\Exceptions\BaseException;
+
+use Prokl\BaseException\BaseException;
+use Symfony\Component\HttpFoundation\Exception\RequestExceptionInterface;
 
 /**
  * Class ValidateErrorException
@@ -10,7 +12,7 @@ use Prokl\RequestValidatorSanitizer\Exceptions\BaseException;
  *
  * @since 10.09.2020
  */
-class ValidateErrorException extends BaseException
+class ValidateErrorException extends BaseException implements RequestExceptionInterface
 {
 
 }
