@@ -30,7 +30,7 @@
     "illuminate/validation": "~6 | ~7",
     "illuminate/translation": "~6 | ~7",
     "waavi/sanitizer": "^1.0",
-    "egulias/email-validator": "^2.1",
+    "egulias/email-validator": "~2 | ~3",
     "giggsey/libphonenumber-for-php": "^8.12",
     "proklung/base-exception": "^1.0"
   },
