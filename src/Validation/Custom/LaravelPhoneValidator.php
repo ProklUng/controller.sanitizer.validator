@@ -25,22 +25,21 @@ class LaravelPhoneValidator implements Rule
      * @param  mixed $attribute Аттрибут.
      * @param  mixed $value     Значение.
      *
-     * @return null|boolean
+     * @return boolean
      */
-    public function passes($attribute, $value): ?bool
+    public function passes($attribute, $value): bool
     {
         $defaultRegion = self::DEFAULT_COUNTRY;
+
+        if ($value === null || !is_string($value) || $value === '') {
+            return false;
+        }
 
         if (strpos($value, '+') === 0) {
             $defaultRegion = null;
         }
 
-        if ($value === null || $value === '') {
-            return false;
-        }
-
         $phoneUtil = PhoneNumberUtil::getInstance();
-        $value = (string) $value;
 
         $phoneNumber = null;
 

@@ -17,9 +17,9 @@ class LaravelPhoneValidatorNullable extends LaravelPhoneValidator
      * @param  mixed $attribute Аттрибут.
      * @param  mixed $value     Значение.
      *
-     * @return null|boolean
+     * @return boolean
      */
-    public function passes($attribute, $value): ?bool
+    public function passes($attribute, $value): bool
     {
         if ($value === null || $value === '' || $value === 'null') {
             return true;

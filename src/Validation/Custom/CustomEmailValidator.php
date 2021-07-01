@@ -20,13 +20,17 @@ class CustomEmailValidator implements Rule
      * @param  mixed $attribute Аттрибут.
      * @param  mixed $value     Значение.
      *
-     * @return null|boolean
+     * @return boolean
      */
-    public function passes($attribute, $value = null): ?bool
+    public function passes($attribute, $value = null): bool
     {
+        if ($value === null) {
+            return false;
+        }
+
         $validator = new EmailValidator();
 
-        return $validator->isValid($value, new RFCValidation());
+        return $validator->isValid((string)$value, new RFCValidation());
     }
 
     /**

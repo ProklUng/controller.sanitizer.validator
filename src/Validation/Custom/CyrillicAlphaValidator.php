@@ -18,9 +18,9 @@ class CyrillicAlphaValidator implements Rule
      * @param  mixed $attribute Аттрибут.
      * @param  mixed $value     Значение.
      *
-     * @return null|boolean
+     * @return boolean
      */
-    public function passes($attribute, $value = null): ?bool
+    public function passes($attribute, $value = null): bool
     {
         return is_string($value) && preg_match('/^[\sA-Za-zА-Яа-яЁё]+$/u', $value);
     }

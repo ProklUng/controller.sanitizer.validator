@@ -28,9 +28,14 @@ abstract class AbstractDictionary
             throw new InvalidArgumentException('Запрошенный элемент ' . $code . ' отсутствует в словаре ' . __CLASS__);
         }
 
-        return static::getItems()[$code];
+        return (string)static::getItems()[$code];
     }
 
+    /**
+     * @param string $value
+     *
+     * @return false|integer|string
+     */
     public static function getKeyByValue(string $value)
     {
         return array_search($value, static::getItems());

@@ -18,9 +18,9 @@ class CustomEmailValidatorNullable extends CustomEmailValidator
      * @param  mixed $attribute Аттрибут.
      * @param  mixed $value     Значение.
      *
-     * @return null|boolean
+     * @return boolean
      */
-    public function passes($attribute, $value = null): ?bool
+    public function passes($attribute, $value = null): bool
     {
         if ($value === null || $value === '' || $value === 'null') {
             return true;

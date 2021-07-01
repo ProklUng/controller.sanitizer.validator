@@ -14,8 +14,8 @@ use JsonException;
 class JsonValidator implements Rule
 {
     /**
-     * @param string $attribute
-     * @param mixed  $value
+     * @param  mixed $attribute Аттрибут.
+     * @param  mixed $value     Значение.
      *
      * @return boolean
      */
