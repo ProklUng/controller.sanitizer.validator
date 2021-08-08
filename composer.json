@@ -25,10 +25,10 @@
     }
   },
   "require": {
-    "php": ">=7.3",
-    "symfony/http-foundation": "~4 | ~5",
-    "illuminate/validation": "~6 | ~7",
-    "illuminate/translation": "~6 | ~7",
+    "php": ">=7.3 || ^8.0",
+    "symfony/http-foundation": "^4.4 || ^5.0",
+    "illuminate/validation": "~6 | ~7 | ~8",
+    "illuminate/translation": "~6 | ~7 | ~8",
     "waavi/sanitizer": "^1.0",
     "egulias/email-validator": "~2 | ~3",
     "giggsey/libphonenumber-for-php": "^8.12",
@@ -36,6 +36,6 @@
     "ext-json": "*"
   },
   "require-dev": {
-    "proklung/phpunit-testing-tools": "^1.0"
+    "proklung/phpunit-testing-tools": "^1.4"
   }
 }
