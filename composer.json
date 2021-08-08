@@ -28,9 +28,8 @@
     "php": ">=7.3 || ^8.0",
     "symfony/http-foundation": "^4.4 || ^5.0",
     "illuminate/validation": "~6 | ~7 | ~8",
-    "illuminate/translation": "~6 | ~7 | ~8",
     "waavi/sanitizer": "^1.0",
-    "egulias/email-validator": "~2 | ~3",
+    "egulias/email-validator": "^2 || ^3",
     "giggsey/libphonenumber-for-php": "^8.12",
     "proklung/base-exception": "^1.0",
     "ext-json": "*"
